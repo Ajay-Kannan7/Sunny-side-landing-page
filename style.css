@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:barlow;
+}
+@font-face{
+    font-family:barlow;
+    src:url(fonts/Barlow-Black.ttf);
+}
+/*Navigation bar designing starts*/
+#nav{
+    border:0;
+    padding:0;
+    margin-bottom:-5px;
+}
+#nav .container-fluid .navbar-header .navbar-toggle .span{
+    color:#fff;
+    font-size:30px;
+}
+#nav .container-fluid{
+    background-color:#3ebfff;
+    padding:20px;
+}
+#nav .container-fluid .navbar-brand{
+    font-size:45px;
+    color:#fff;
+}
+#nav .container-fluid .collapse ul li a{
+    font-weight:lighter;
+    font-size:15px;
+    color:#fff;
+    transition:all 0.4s ease-in;
+}
+#nav .container-fluid .collapse ul li a:hover{
+    opacity:0.5;
+}
+#nav .container-fluid .collapse ul li .btn{
+    border-radius:25px;
+    background:#6eceff;
+    border:none;
+    transition:all 0.4s ease-in;
+}
+#nav .container-fluid .collapse ul li .btn:hover{
+    background:#aaddf7;
+}
+@media only screen and (max-width:1000px){
+    #nav .container-fluid .collapse ul li a{
+        font-size:22px;
+    }
+}
+/*Navigation bar designing starts*/
+/*Header design starts*/
+.header{
+    width:100%;
+    color:#fff;
+    display:inline-block;
+    margin:0;
+    text-align:center;
+    background-color:#3ebfff;
+    position:relative;
+}
+.header h1{
+    font-size:90px;
+    margin-top:15%;
+}
+.header .arrow{
+    position:absolute;
+    left:50%;
+    margin-top:20%;
+    animation:float 1.8s ease-in infinite;
+}
+@keyframes float{
+    0%,100%{margin-top:20%}
+    50%{margin-top:15%}
+}
+.header .orange{
+    width:100%;
+}
+@media only screen and (max-width:1000px){
+    .header h1{
+        font-size:70px;
+    }
+}
+@media only screen and (max-width:300px){
+    .header h1{
+        font-size:55px;
+    }
+}
+/*Header design ends*/
+/*Body one designing starts*/
+.body-one{
+    width:100%;
+    display:flex;
+    margin:0;
+    padding:0;
+}
+.body-one .content{
+    width:50%;
+    padding:100px 45px;
+}
+.body-one .content h3{
+    font-size:50px;
+}
+.body-one .content p{
+    margin-top:5%;
+}
+.body-one .content a{
+    color:#000;
+    font-size:25px;
+    text-decoration:none;
+    position:relative;
+}
+.body-one .content a:before{
+    content:'';
+    width:0%;
+    height:7px;
+    background-color:#fed201;
+    position:absolute;
+    top:82%;
+    border-radius:10px;
+    transition:width 0.4s ease-in;
+}
+.body-one .content a:hover:before{
+    width:100%;
+}
+.body-one .image{
+    width:50%;
+    display:flex;
+}
+.body-one .image img{
+    width:100%;
+}
+@media only screen and (max-width:1000px){
+    .body-one{
+        flex-direction:column;
+    }
+    .body-one .content,.body-one .image{
+        width:100%;
+    }
+    .body-one .content{
+        text-align:center;
+    }
+}
+/*Body one designing ends*/
+/*Body two designing begins*/
+.body-two{
+    width:100%;
+    display:flex;
+}
+.body-two .image{
+    width:50%;
+    display:flex;
+}
+.body-two .image img{
+    width:100%;
+}
+.body-two .content{
+    width:50%;
+    padding:100px 45px;
+}
+.body-two h3{
+    font-size:50px;
+}
+.body-two .content p{
+    margin-top:5%;
+}
+.body-two .content a{
+    color:#000;
+    font-size:25px;
+    text-decoration:none;
+    position:relative;
+}
+.body-two .content a:before{
+    content:'';
+    width:0%;
+    height:7px;
+    background-color:#ff7767;
+    position:absolute;
+    top:82%;
+    border-radius:10px;
+    transition:width 0.4s ease-in;
+}
+.body-two .content a:hover:before{
+    width:100%;
+}
+@media only screen and (max-width:1000px){
+    .body-two{
+        flex-direction:column;
+    }
+    .body-two .content,.body-two .image{
+        width:100%;
+    }
+    .body-two .content{
+        text-align:center;
+    }
+}
+/*Body two designing ends*/
+/*Body three designing starts here*/
+.body-three{
+    width:100%;
+    display:flex;
+}
+.body-three .image-content1,.body-three .image-content2{
+    width:50%;
+    padding:100px;
+    background-size:cover;
+}
+.body-three .image-content1 h2,.body-three .image-content2 h2{
+    margin-top:48%;
+}
+.body-three .image-content1{
+    background-image:url(images/desktop/image-graphic-design.jpg);
+}
+.body-three .image-content2{
+    background-image:url(images/desktop/image-photography.jpg);
+}
+@media only screen and (max-width:1000px){
+    .body-three{
+        flex-direction:column;
+    }
+    .body-three .image-content1,.body-three .image-content2{
+        width:100%;
+        padding-top:200px;
+    }
+}
+/*Body three designing ends here*/
+/*Testimonial designing starts here*/
+.testimonials{
+    width:100%;
+    display:inline-block;
+    margin:0;
+    text-align:center;
+    padding:40px 20px;
+}
+.testimonials h2{
+    font-size:35px;
+}
+.testimonials .clients{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    margin-top:5%;
+}
+.testimonials .clients .client{
+    width:30%;
+}
+.testimonials .clients .client img,
+.testimonials .clients .client .desc{
+    margin-bottom:10%;
+    font-size:15px;
+}
+@media only screen and (max-width:1000px){
+    .testimonials h2{
+        margin-bottom:17%;
+    }
+    .testimonials .clients{
+        flex-direction:column;
+    }
+    .testimonials .clients .client{
+        width:100%;
+        margin-bottom:9%;
+    }
+    .testimonials .clients .client img,
+    .testimonials .clients .client .desc{
+        margin-bottom:2%;
+    }
+}
+/*Testimonial designing ends here*/
+/*Images division designing begins here*/
+.images{
+    width:100%;
+    background-color:red;
+    display:flex;
+}
+.images .one,
+.images .two
+{
+    width:50%;
+    display:flex;
+}
+.images .one img,.images .two img{
+    width:50%;
+}
+@media only screen and (max-width:1000px){
+    .images{
+        flex-direction:column;
+    }
+    .images .one,
+    .images .two{
+        width:100%;
+    }
+}
+/*Images division designing ends here*/
+/*Footer division designing starts here*/
+.footer{
+    width:100%;
+    background-color:#90d4c5;
+    display:inline-block;
+    margin:0;
+    color:#206958;
+    padding:40px 30px;
+    text-align:center;
+}
+.footer h2{
+    font-size:40px;
+    margin-bottom:3%;
+}
+.footer a ,.footer .connections a{
+    text-decoration:none;
+    color:#206958;
+    transition:color 0.2s ease-in;
+}
+.footer a:hover ,.footer .connections a:hover{
+    color:#fff;
+}
+.footer .connections{
+    width:15%;
+    margin:3% auto;
+    font-size:23px;
+    display:flex;
+    justify-content:space-between;
+}
+@media only screen and (max-width:1000px){
+    .footer .connections{
+        width:45%;
+    }
+}
+/*Footer division designing ends here*/
